@@ -1,9 +1,9 @@
 package Graficos;
 import java.awt.Cursor;
 import javax.swing.*;
-public class Formulario extends JFrame {
+public class Formulario1 extends JFrame {
     private JLabel label1, label2;
-    public Formulario() {
+    public Formulario1() {
         setLayout(null);
         label1=new JLabel("Sistema Uniremington.");
         label1.setBounds(10,20,300,30);
@@ -15,7 +15,7 @@ public class Formulario extends JFrame {
         
     }
     public static void main(String[] arg) {
-        Formulario formulario1=new Formulario();
+        Formulario1 formulario1=new Formulario1();
         formulario1.setBounds(0,0,300,200);
         formulario1.setResizable(false);
         formulario1.setVisible(true);
