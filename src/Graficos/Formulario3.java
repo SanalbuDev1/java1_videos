@@ -9,6 +9,7 @@ package Graficos;
  *
  * @author UNIREMINGTON
  */
+import java.awt.Graphics;
 import javax.swing.*;
 import java.awt.event.*;
 public class Formulario3 extends JFrame implements ActionListener {
@@ -28,6 +29,7 @@ public class Formulario3 extends JFrame implements ActionListener {
         
         boton2.addActionListener(this);
         
+        
     }
     public void Formulario() {
         setLayout(null);
@@ -37,6 +39,7 @@ public class Formulario3 extends JFrame implements ActionListener {
         label2=new JLabel("Vesión 1.0");
         label2.setBounds(10,100,100,30);
         add(label2);
+      
     }
     
      public void actionPerformed(ActionEvent e) {
@@ -52,7 +55,20 @@ public class Formulario3 extends JFrame implements ActionListener {
         formulario1.Formulario();
         formulario1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         formulario1.Formulario33();
+        
+        
+       
     }
+    
+   
+    
 }
 
+ class lineas33 extends JPanel{
+        public void paintComponent(Graphics g){
+            super.paintComponent(g);
+            g.drawRect(100, 200, 100, 200);
+            setVisible(true);
+        }
+    }
     
