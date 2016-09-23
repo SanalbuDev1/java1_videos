@@ -15,7 +15,7 @@ import java.awt.event.*;
 public class Formulario3 extends JFrame implements ActionListener {
     JButton boton1,boton2;
     JLabel label1,label2;
-    public void Formulario33() {
+    public  Formulario3() {
         setLayout(null);
         boton1=new JButton("Finalizar23");
         boton1.setBounds(300,250,100,30);
@@ -24,10 +24,11 @@ public class Formulario3 extends JFrame implements ActionListener {
         boton2=new JButton("Finalizar1");
         add(boton2);
         boton2.setSize(100,30);
-        boton2.setLocation(300,210);
-       
-        
+        boton2.setLocation(300,210);             
         boton2.addActionListener(this);
+        lineas33 new1= new lineas33();
+        add(new1);
+        setVisible(true);
         
         
     }
@@ -39,6 +40,9 @@ public class Formulario3 extends JFrame implements ActionListener {
         label2=new JLabel("Vesión 1.0");
         label2.setBounds(10,100,100,30);
         add(label2);
+        setVisible(true);
+        
+        
       
     }
     
@@ -54,21 +58,27 @@ public class Formulario3 extends JFrame implements ActionListener {
         formulario1.setVisible(true);
         formulario1.Formulario();
         formulario1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        formulario1.Formulario33();
+        formulario1.setVisible(true);
+       
+        
         
         
        
     }
+    
     
    
     
 }
 
  class lineas33 extends JPanel{
-        public void paintComponent(Graphics g){
+        public  void paintComponent(Graphics g){
             super.paintComponent(g);
-            g.drawRect(100, 200, 100, 200);
+            g.drawLine(0, 0, 100, 200);
             setVisible(true);
+           
         }
+       
+        
     }
     
