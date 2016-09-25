@@ -2,7 +2,7 @@
 package Graficos;
 
 import javax.swing.*;
-public class graficas_swing_v65 {
+public class graficas_swing_v55 {
 
     
     public static void main(String[] args) {

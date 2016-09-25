@@ -12,7 +12,7 @@ import javax.swing.JFrame;
  *
  * @author Santy
  */
-public class Graficas_swing_ii_v66 {
+public class Graficas_swing_ii_v56 {
     
     public static void main(String[] args) {
         miMarco1 marco1 = new miMarco1();
