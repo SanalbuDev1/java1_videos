@@ -22,29 +22,29 @@ import javax.imageio.*;
  *
  * @author Santy
  */
-public class Swing_IX_video63 {
+public class VIDEO64_SWINGX {
     public static void main(String[] args) {
         
-        MarcoImagen ca = new MarcoImagen();
+        MarcoImagen1 ca = new MarcoImagen1();
         
        
     }
 }
 
-class MarcoImagen extends JFrame{
-    public MarcoImagen(){
+class MarcoImagen1 extends JFrame{
+    public MarcoImagen1(){
         
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(200,200,800,800);
+        setBounds(200,200,400,400);
         setTitle("Marco Imagen");
-        laminaImagen ca= new laminaImagen();
+        laminaImagen1 ca= new laminaImagen1();
         add(ca);
         ca.setBackground(new Color(180,210,255));
         setVisible(true);
     }
 }
 
-class laminaImagen extends JPanel{
+class laminaImagen1 extends JPanel{
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         Graphics2D g2=(Graphics2D) g;
@@ -56,16 +56,18 @@ class laminaImagen extends JPanel{
             System.out.println("no se encontro la imagen");
         }
         
+        int alto=imagen.getHeight(this);
+        int ancho=imagen.getWidth(this);
+        System.out.println("ancho " + ancho + "alto" + alto);
+        
         g.drawImage(imagen, 0, 0, null);
         
-        Rectangle2D rectangulo=new Rectangle2D.Double(0,200,400,400);
-        g2.fill(rectangulo);
-        g.copyArea(0, 0, 200, 200, 150, 300);
-        g2.setColor(new Color(255,255,255));
-        g2.fill(new Rectangle2D.Double(50,250,100,100));
-        Color color=new Color(0,0,0).brighter();
-        g2.setPaint(color);
-        g2.drawString("cuadrado 100x100", 50, 290);
+        for (int i = 0; i < 100; i++) {
+            for (int j = 0; j < 100; j++) {
+                g2.copyArea(0, 0, ancho, alto, ancho*i,alto*j);
+            }
+        }
+        
         
         
         
