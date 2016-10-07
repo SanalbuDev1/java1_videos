@@ -3,15 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package contructor_29;
+package contructor;
 
 /**
  *
  * @author Santy
  */
-public class uso_coche {
+public class Uso_Coche {
     public static void main(String[] args) {
-        coche ca=new coche();
-        System.out.println("este coche tiene " + ca.ruedas + " ruedas");
+        
+        coche ca = new coche();
+        ca.declara_color();
+        System.out.println(ca.muestra_color());
+        
     }
 }
