@@ -27,6 +27,7 @@ class marco extends JFrame{
         setVisible(true);
        LaminaConFiguras ca1 = new LaminaConFiguras();
         add(ca1);
+        
        
        
     }       
@@ -41,6 +42,7 @@ class LaminaConFiguras extends JPanel{
         g.drawOval(200, 200, 50, 50);
         g.drawLine(10, 10, 370, 10);
         g.drawArc(150, 100, 150, 80, 150, 150);
+       
     }
     
 }
