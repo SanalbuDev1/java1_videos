@@ -1,0 +1,4 @@
+Graficos.laminaImagen1
+Graficos.VIDEO54_SWINGX
+Graficos.MarcoImagen1
+Graficos.VIDEO64_SWINGX

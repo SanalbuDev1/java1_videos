@@ -16,7 +16,7 @@ public class Examen1 extends JFrame implements ActionListener  {
     
     public  Examen1(){
     
-        setBounds(10,10,600,500);
+        
         setLayout(null);
         setVisible(true);
         
@@ -146,7 +146,7 @@ public class Examen1 extends JFrame implements ActionListener  {
         Examen1 ca =new Examen1();
         ca.formulario();
         ca.setVisible(true);
-       
+        ca.setBounds(10,10,600,500);
         
         
         

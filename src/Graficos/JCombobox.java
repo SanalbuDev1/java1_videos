@@ -45,6 +45,9 @@ public class JCombobox extends JFrame implements ActionListener{
 
 public void actionPerformed(ActionEvent e) {
         if (e.getSource()==boton1) {
+            
+            Container f=this.getContentPane();
+            
             String cad1=(String)combo1.getSelectedItem();
             String cad2=(String)combo2.getSelectedItem();
             String cad3=(String)combo3.getSelectedItem();
@@ -54,6 +57,7 @@ public void actionPerformed(ActionEvent e) {
             Color color1=new Color(rojo,verde,azul);
             boton1.setBackground(color1);
             setTitle("rgb " + cad1 + cad2 + cad3);
+            f.setBackground(new Color(rojo,verde,azul));
         }
  }
     
