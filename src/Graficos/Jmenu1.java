@@ -15,8 +15,7 @@ public class Jmenu1 extends JFrame implements ActionListener {
     public Jmenu1() {
         setTitle("hola");
         
-        cuadrado ca=new cuadrado();
-        add(ca);
+       
         
         setLayout(null);
         setResizable(false);
@@ -89,13 +88,3 @@ public class Jmenu1 extends JFrame implements ActionListener {
     }
 }
 
-class  cuadrado extends JPanel {
-
-                public void paintComponent(Graphics g) {
-                    super.paintComponent(g);
-
-                    Graphics2D g2=(Graphics2D) g;
-                    Rectangle2D rectangulo=new Rectangle2D.Double(0,200,400,400);
-                    g2.fill(rectangulo);
-                }
-            }

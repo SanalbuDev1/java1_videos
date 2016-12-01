@@ -13,6 +13,10 @@ public class Examen1 extends JFrame implements ActionListener  {
     private JTextField textfield1,textfield2,textfield3;
     private JButton boton1,boton2,boton3,boton4,boton5,boton6;
     
+    private JMenuBar mb;
+    private JMenu menu1, menu2;
+    private JMenuItem mi1, mi2, mi3, m2q, m2w, m2e, m2r;
+    
     
     public  Examen1(){
     

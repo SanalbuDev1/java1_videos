@@ -28,9 +28,9 @@ public class Eventos_III_V67 extends JFrame {
         setTitle("Eventos");
         setSize(400, 400);
         setLocation(100, 200);
-        setVisible(true);
+        
         Lamina1 ca = new Lamina1();
-        add(ca);
+        add(ca);setVisible(true);
 
     }
 }
@@ -38,9 +38,12 @@ public class Eventos_III_V67 extends JFrame {
 class Lamina1 extends JPanel {
 
     JButton BT, BT2, BT3;
+    
 
     public Lamina1() {
-
+        BT=new JButton("amarillo");
+        BT2=new JButton("azul");
+        BT3=new JButton("rojo");
         add(BT);
 
         add(BT2);
