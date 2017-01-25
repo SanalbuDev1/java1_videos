@@ -50,7 +50,7 @@ public class Formulario3 extends JFrame implements ActionListener {
         if (e.getSource()==boton1 || e.getSource()==boton2) {
             System.exit(0);
         }
-    }
+     }
     
     public static void main(String[] ar) {
         Formulario3 formulario1=new Formulario3();
